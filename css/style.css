@@ -1,0 +1,124 @@
+ body {
+     /* font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .nav-logo {
+     width: 150px;
+ }
+
+ .nav-right a {
+     font-size: 18px;
+     color: #393838;
+ }
+
+ .navbar-toggler:focus {
+     box-shadow: none;
+ }
+
+ .hero {
+     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../images/hero-img-1.png) center/cover no-repeat;
+     min-height: calc(100vh - 70px);
+     display: flex;
+     background-size: cover;
+     background-position: top;
+     align-items: center;
+ }
+
+ .card-top img {
+     display: block;
+ }
+
+ .product-card img {
+     height: 240px;
+     object-fit: cover
+ }
+
+ .instagram-card img {
+     height: 400px;
+     object-fit: cover;
+     display: block;
+ }
+
+ .category img {
+     object-fit: cover
+ }
+
+ .product-card:hover {
+     transform: translateY(-5px);
+     transition: .3s;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, .1)
+ }
+
+ .brand img {
+     filter: grayscale(100%);
+     opacity: .5;
+     transition: all .3s ease;
+ }
+
+ .brand img:hover {
+     filter: none;
+     opacity: 1
+ }
+
+ .form-control::placeholder {
+     text-transform: capitalize;
+ }
+
+ .footer-logo {
+     width: 150px;
+     display: inline-block;
+ }
+
+ .footer-links li a {
+     color: #ccc;
+     text-decoration: none;
+     transition: all .3s ease;
+     text-transform: capitalize;
+
+ }
+
+ .footer-links li a:hover {
+     color: #fff
+ }
+
+ .tag {
+     color: #fff;
+     transition: all .3s ease;
+ }
+
+ .tag:hover {
+     color: #ccc;
+ }
+
+ /* media query */
+ @media (max-width:991px) {
+     .search {
+         width: 100% !important;
+     }
+ }
+
+ @media (max-width:767px) {
+     .nav-logo {
+         width: 140px;
+     }
+ }
+
+ @media (max-width:576px) {
+     .nav-logo {
+         width: 130px;
+     }
+
+     .hero {
+         background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../images/hero-img-4.png) center/cover no-repeat;
+         min-height: 60vh;
+     }
+
+     .choose .fs-5 {
+         font-size: 1rem !important;
+     }
+
+     .choose p {
+         font-size: 0.85rem !important;
+     }
+ }
